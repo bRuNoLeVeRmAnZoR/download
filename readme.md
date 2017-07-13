@@ -8,7 +8,7 @@
 ## Install
 
 ```
-$ npm install --save download
+$ npm install download
 ```
 
 
@@ -57,7 +57,9 @@ Path to where your file will be written.
 
 #### options
 
-Same options as [`got`](https://github.com/sindresorhus/got) in addition to the ones below.
+Type: `Object`
+
+Same options as [`got`](https://github.com/sindresorhus/got#options) and [`decompress`](https://github.com/kevva/decompress#options) in addition to the ones below.
 
 ##### extract
 
@@ -65,6 +67,18 @@ Type: `boolean`<br>
 Default: `false`
 
 If set to `true`, try extracting the file using [`decompress`](https://github.com/kevva/decompress).
+
+##### filename
+
+Type: `string`
+
+Name of the saved file.
+
+##### proxy
+
+Type: `string`
+
+Proxy endpoint.
 
 
 ## License
